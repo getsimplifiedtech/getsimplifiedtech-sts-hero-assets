@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ambient Cinematic Hero POC</title>
+<meta name="description" content="Proof of concept: an ambient cinematic hero that keeps the product fully visible.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="data:,">
+<link rel="preload" as="image" href="assets/poster.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero" id="hero">
+  <canvas id="ambient" class="ambient" width="128" height="77" aria-hidden="true"></canvas>
+  <div class="stage" aria-hidden="true">
+    <div class="drift">
+      <video id="film" muted loop playsinline disablepictureinpicture preload="none" poster="assets/poster.webp">
+        <source src="assets/hero.mp4" type="video/mp4">
+        <source src="assets/hero.webm" type="video/webm">
+      </video>
+    </div>
+  </div>
+  <div class="shade" aria-hidden="true"></div>
+  <div class="hud" aria-hidden="true">
+    <i class="br tl"></i><i class="br tr"></i><i class="br bl"></i><i class="br brr"></i>
+    <div class="hud-l"><span class="rec"></span>REC <span id="tc">00:00:00:00</span></div>
+    <div class="hud-r">CAM A <span class="sep">/</span> 30P</div>
+  </div>
+  <div class="copy">
+    <p class="eyebrow reveal" style="--d:.15s"><span>Heat</span><i>/</i><span>Pressure</span><i>/</i><span>Beef</span></p>
+    <h1 class="reveal" style="--d:.3s"><span>Smashed</span> <em>different.</em></h1>
+    <p class="support reveal" style="--d:.55s">Heat. Pressure. No shortcuts.</p>
+  </div>
+  <div class="cue reveal" style="--d:1s" aria-hidden="true"><span>Scroll</span><i></i></div>
+</header>
+<section class="after" id="after">
+  <div class="after-inner">
+    <p class="eyebrow">// The method</p>
+    <h2>Pressed hard. Seared fast. Served hot.</h2>
+    <ol class="steps">
+      <li><b>01</b><h3>Heat</h3><p>A flat-top that never drops below screaming.</p></li>
+      <li><b>02</b><h3>Pressure</h3><p>One hard press locks in the crust in seconds.</p></li>
+      <li><b>03</b><h3>Beef</h3><p>Fresh-ground, never frozen, nothing hidden.</p></li>
+    </ol>
+  </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "ambient-hero-poc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:assets": "node scripts/build-assets.mjs",
+    "start": "npx --yes serve -l 5174 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/barlow": "^5.3.0",
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0"
+  },
+  "private": true,
+  "type": "module"
+}
